@@ -7,9 +7,6 @@ const { User } = require("./models");
 const router = express.Router();
 
 const jsonParser = bodyParser.json();
-router.get("/", (req, res) => {
-  res.json({ test: "this is a test" });
-});
 
 // Post to register a new user
 router.post("/", jsonParser, (req, res) => {
