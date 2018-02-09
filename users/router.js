@@ -7,7 +7,7 @@ const { User } = require("./models");
 const router = express.Router();
 
 const jsonParser = bodyParser.json();
-router.get("/api", (req, res) => {
+router.get("/", (req, res) => {
   res.json({ test: "this is a test" });
 });
 
