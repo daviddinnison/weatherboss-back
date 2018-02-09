@@ -138,6 +138,10 @@ router.get("/", (req, res) => {
     .catch(err => res.status(500).json({ message: "Internal server error" }));
 });
 
+router.get("/test", (req, res) => {
+  return res.json({"name": "david"})
+});
+
 //single user
 router.get("/:id", jsonParser, (req, res) => {
   User.findById(req.params.id)
