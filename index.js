@@ -20,6 +20,11 @@ app.use(
     })
 );
 
+app.get('/api',(req, res) => {
+    res.json({name: 'David'})
+})
+
+
 function runServer(port = PORT) {
     const server = app
         .listen(port, () => {
