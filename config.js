@@ -5,6 +5,6 @@ module.exports = {
     process.env.DATABASE_URL ||
     global.DATABASE_URL ||
     "mongodb://dev:dev@ds155325.mlab.com:55325/weatherboss",
-  JWT_SECRET: process.env.JWT_SECRET,
+  JWT_SECRET: process.env.JWT_SECRET || "SOME_SECRET_STRING",
   JWT_EXPIRY: process.env.JWT_EXPIRY || "7d"
 };
